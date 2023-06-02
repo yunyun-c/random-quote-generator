@@ -1,0 +1,94 @@
+@import url("https://fonts.googleapis.com/css2?family=Ysabeau:ital,wght@0,200;0,400;0,600;0,700;1,200;1,400;1,600;1,700&display=swap");
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+:root {
+  --color-1: #eadbc5;
+  --color-2: #fcfbf9;
+  --color-3: #e0aa95;
+  --color-4: #81a858;
+  --color-5: #b2c798;
+  --color-font: #303030;
+  --color-font-small: #828282;
+}
+
+body {
+  margin: auto;
+  font-size: 16px;
+  font-family: "Ysabeau", sans-serif;
+  background-color: var(--color-1);
+  color: var(--color-font);
+}
+
+.App-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.App-header h1 {
+  font-size: 2.5rem;
+  font-weight: 600;
+  padding: 1rem;
+}
+
+.material-icons {
+  font-size: 1rem;
+}
+
+.App-header button {
+  float: right;
+  padding: 0.5rem 1rem;
+  margin-left: 5rem;
+  border: none;
+  background: transparent;
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+main {
+  width: 100%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.quotes {
+  padding: 1rem;
+  margin: auto;
+}
+
+.single-quote {
+  max-width: 350px;
+  border-left: 3px solid var(--color-3);
+  padding: 1rem;
+  margin: 2rem;
+}
+
+.author-btn {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  cursor: pointer;
+}
+
+.material-icons.btn {
+  visibility: hidden;
+}
+
+.author-btn:focus-within,
+.material-icons.btn:focus {
+  background-color: var(--color-2);
+  border-radius: 10px;
+  visibility: visible;
+  padding: 1rem 1.5rem;
+}
