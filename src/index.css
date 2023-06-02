@@ -19,15 +19,25 @@ body {
   margin: auto;
   font-size: 16px;
   font-family: "Ysabeau", sans-serif;
-  background-color: var(--color-1);
+  background: linear-gradient(
+    0.56turn,
+    var(--color-1),
+    var(--color-2),
+    var(--color-3)
+  );
   color: var(--color-font);
+  width: 100vw;
+  height: 100vh;
 }
 
 .App-header {
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   width: 100%;
+
+  gap: 1rem;
 }
 
 .App-header h1 {
@@ -40,55 +50,110 @@ body {
   font-size: 1rem;
 }
 
-.App-header button {
-  float: right;
+button.header-btn {
   padding: 0.5rem 1rem;
-  margin-left: 5rem;
   border: none;
   background: transparent;
   font-size: 1rem;
   display: flex;
   align-items: center;
   justify-content: center;
+  cursor: pointer;
+}
+
+button.header-btn:hover,
+button.header-btn:hover:focus {
+  padding: 0.5rem 1rem;
+  border: 1px solid var(--color-4);
+  border-radius: 10px;
+  background: var(--color-2);
+  font-size: 1.3rem;
+  font-weight: 700;
+  line-height: 1rem;
+  color: var(--color-4);
 }
 
 main {
   width: 100%;
+  padding: 5rem 0;
   margin: auto;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  height: auto;
 }
 
 .quotes {
   padding: 1rem;
   margin: auto;
+
+  border-radius: 10px;
+  background-color: var(--color-2);
 }
 
 .single-quote {
   max-width: 350px;
   border-left: 3px solid var(--color-3);
   padding: 1rem;
-  margin: 2rem;
+  margin: 1.5rem;
+  font-size: 1.5rem;
+  line-height: 1.8rem;
 }
 
 .author-btn {
   display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-around;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
   cursor: pointer;
+  margin: auto;
+  width: 70%;
+  position: relative;
+
+  border: none;
+  background: transparent;
+  padding: 0.5rem 0;
+}
+
+#author {
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 1.2rem;
+  font-style: italic;
+}
+
+#author small {
+  font-size: 0.8rem;
+  font-weight: 700;
+  line-height: 1rem;
 }
 
 .material-icons.btn {
-  visibility: hidden;
+  opacity: 0;
+  text-align: right;
+  width: 100%;
+  background: transparent;
+  z-index: 3;
+  position: absolute;
+  right: 1rem;
+  font-size: 1.5rem;
 }
 
-.author-btn:focus-within,
-.material-icons.btn:focus {
-  background-color: var(--color-2);
+.author-btn:hover,
+.author-btn:hover:focus-within {
+  border: 2px solid var(--color-3);
   border-radius: 10px;
-  visibility: visible;
   padding: 1rem 1.5rem;
+  color: var(--color-3);
+}
+
+.material-icons.btn:hover,
+.material-icons.btn:hover:focus {
+  opacity: 1;
+}
+
+footer {
+  text-align: center;
+  padding: 1.5rem;
 }

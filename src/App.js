@@ -5,7 +5,7 @@ function App() {
     <div>
       <header className="App-header">
         <h1>Random Quote Generator</h1>
-        <button>
+        <button className="header-btn">
           Random <span class="material-icons">autorenew</span>
         </button>
       </header>
@@ -16,14 +16,18 @@ function App() {
             smarter than you think. "
           </p>
           <div className="author-btn">
-            <a>
-              <i>Author</i> <br /> leads
-            </a>
+            <div id="author">
+              Author <br />
+              <small>leads</small>
+            </div>
 
             <span class="material-icons btn">arrow_right_alt</span>
           </div>
         </div>
       </main>
+      <footer>
+        <p>C</p>
+      </footer>
     </div>
   );
 }
