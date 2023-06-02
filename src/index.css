@@ -27,7 +27,6 @@ body {
   );
   color: var(--color-font);
   width: 100vw;
-  height: 100vh;
 }
 
 .App-header {
@@ -87,7 +86,7 @@ main {
 .quotes {
   padding: 1rem;
   margin: auto;
-
+  width: 400px;
   border-radius: 10px;
   background-color: var(--color-2);
 }
@@ -123,12 +122,6 @@ main {
   font-style: italic;
 }
 
-#author small {
-  font-size: 0.8rem;
-  font-weight: 700;
-  line-height: 1rem;
-}
-
 .material-icons.btn {
   opacity: 0;
   text-align: right;
@@ -151,6 +144,48 @@ main {
 .material-icons.btn:hover,
 .material-icons.btn:hover:focus {
   opacity: 1;
+}
+
+.author-quotes {
+  margin: 5rem 1rem;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: var(--color-1);
+  border-radius: 10px;
+  gap: 2rem;
+}
+.author-quotes h2 {
+  font-size: 2rem;
+  font-weight: 600;
+  padding: 1.2rem;
+}
+.author-quotes span {
+  font-size: 1rem;
+  font-style: italic;
+  line-height: 1.3rem;
+  max-width: 80ch;
+}
+
+.other-quotes {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  width: 90%;
+  margin: auto;
+}
+
+.other-quotes .quotes {
+  margin: 2rem;
+  display: flex;
+  align-items: center;
+}
+
+.other-quotes .single-quote {
+  border-left: 3px solid var(--color-5);
 }
 
 footer {
