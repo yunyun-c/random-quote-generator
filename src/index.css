@@ -21,12 +21,13 @@ body {
   font-family: "Ysabeau", sans-serif;
   background: linear-gradient(
     0.56turn,
-    var(--color-1),
+    var(--color-3),
     var(--color-2),
-    var(--color-3)
+    var(--color-1)
   );
   color: var(--color-font);
   width: 100vw;
+  height: 100vh;
 }
 
 .App-header {
@@ -191,4 +192,9 @@ main {
 footer {
   text-align: center;
   padding: 1.5rem;
+}
+
+footer p {
+  font-size: 0.8rem;
+  color: var(--color-font-small);
 }

@@ -108,7 +108,7 @@ function App() {
         )}
       </main>
       <footer>
-        <p>C</p>
+        <p>created by yunyun-c - devChallenges.io</p>
       </footer>
     </div>
   );
